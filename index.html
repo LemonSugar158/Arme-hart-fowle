@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego FPS Móvil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>FPS Móvil 3D</h1>
+    <button id="startBtn">Iniciar Juego</button>
+    <button id="openShopBtn">Tienda</button>
+  </div>
+
+  <div id="shop">
+    <h2>Tienda de Armas</h2>
+    <div id="weaponShopList"></div>
+    <h2>Tienda de Habilidades</h2>
+    <div id="abilityShopList"></div>
+    <button id="closeShopBtn">Cerrar Tienda</button>
+  </div>
+
+  <div id="gameUI">
+    <div id="healthBarContainer"><div id="healthBar"></div></div>
+    <div id="ammoBarContainer"><div id="ammoBar"></div></div>
+    <div id="coinCounter">Monedas: 0</div>
+    <div id="weaponDisplay">Arma: Ninguna</div>
+    <div id="abilitiesDisplay">Habilidades: Ninguna</div>
+  </div>
+
+  <div id="controls">
+    <div id="joystick" class="joystick"><div id="stick"></div></div>
+    <div id="fireBtn" class="btn">F</div>
+  </div>
+  <div id="reloadBtn">Recargar</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
